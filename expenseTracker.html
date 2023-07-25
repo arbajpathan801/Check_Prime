@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER </title>
+</head>
+<body>
+    <form id="form" >
+        <label for="amount" >Choose expenseamount </label>
+        <input type="number" name="expenseamount" id="amount" required>
+        <label for="discriptions" >Choose discription  </label>
+       <input type="text" id="discriptions" required>
+        <label for="category" >Choose Categories </label>
+       <select name="category" id="category" required>
+            <option value="cheap">Cheap</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="expensive">Expensive</option>
+        </select>
+        <label for="add"></label>
+        <button type="submit" id="add">Add expense</button>
+    </form>
+    <ul  id="expense">
+
+    </ul>
+    <script src="expense.js"></script>
+</body>
+</html>
